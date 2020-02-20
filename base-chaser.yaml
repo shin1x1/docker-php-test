@@ -3,21 +3,16 @@ images:
       src: Dockerfile.tpl
       dest: Dockerfile
     command: |
+      git checkout -b branch-{{.Tag}}
       git add {{.TemplateDestination}}
-      git commit -m "Updated {{.Tag}}"
+      git commit -m "update to {{.Tag}}"
+      git push origin :{{.Tag}}
       git tag {{.Tag}}
       git push origin {{.Tag}}
+      git checkout master
     base:
       provider: dockerhub
       image: library/php
       tags:
-        - pattern: "^7.4.[0-9]+\\-cli\\-alpine$"
+        - pattern: "^7.4.[0-9]+\\-cli\\-buster$"
           version: ^7.4.0
-        - pattern: "^7.4\\-cli\\-alpine$"
-          version: ^7.4
-        - pattern: "^7.3.[0-9]+\\-cli\\-alpine$"
-          version: ^7.3.0
-        - pattern: "^7.3\\-cli\\-alpine$"
-          version: ^7.3
-        - pattern: "^7\\-cli\\-alpine$"
-          version: 7
