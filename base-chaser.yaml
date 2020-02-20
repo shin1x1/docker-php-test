@@ -11,13 +11,5 @@ images:
       provider: dockerhub
       image: library/php
       tags:
-        - pattern: "^7.4.[0-9]+\\-cli\\-alpine$"
+        - pattern: "^7.4.[0-9]+\\-cli\\-buster$"
           version: ^7.4.0
-        - pattern: "^7.4\\-cli\\-alpine$"
-          version: ^7.4
-        - pattern: "^7.3.[0-9]+\\-cli\\-alpine$"
-          version: ^7.3.0
-        - pattern: "^7.3\\-cli\\-alpine$"
-          version: ^7.3
-        - pattern: "^7\\-cli\\-alpine$"
-          version: 7
