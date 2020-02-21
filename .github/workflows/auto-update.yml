@@ -31,14 +31,16 @@ jobs:
         run: |
           is_push=
           if [ -n "$(git ls-files | grep base-chaser.lock)" ]; then
-            if [ ! -n "$(git diff base-chaser.lock)" ]; then
+            if [ -n "$(git diff base-chaser.lock)" ]; then
               is_push=1
             fi
           else
-            is_push=1
+            is_push=2
           fi
 
-          if [ -n ${is_push} ]; then
+          echo ${is_push}
+
+          if [ -n "${is_push}" ]; then
             git add base-chaser.lock
             git commit -m "update base-chaser.lock by GitHub Action"
             git push origin master
