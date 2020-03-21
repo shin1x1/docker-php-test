@@ -1,0 +1,71 @@
+last_updated_at: 2020-03-21T00:05:44.793235163Z
+images:
+- template:
+    src: Dockerfile.tpl
+    dest: Dockerfile
+  command: |
+    git checkout -b branch-{{.Tag}}
+    git add {{.TemplateDestination}}
+    git commit -m "update to {{.Tag}}"
+    git push origin :{{.Tag}}
+    git tag {{.Tag}}
+    git push origin {{.Tag}}
+    git checkout master
+  base:
+    provider: dockerhub
+    image: library/php
+    tags:
+    - pattern: ^7.4.[0-9]+\-cli\-buster$
+      version: ^7.4.0
+      resolved: 7.4.4-cli-buster
+      os: linux
+      architecture: amd64
+      last_updated_at: 2020-03-20T04:11:57.052323Z
+    - pattern: ^7.4\-cli\-buster$
+      version: "7.4"
+      resolved: 7.4-cli-buster
+      os: linux
+      architecture: amd64
+      last_updated_at: 2020-03-20T04:10:13.855337Z
+    - pattern: ^7.3.[0-9]+\-cli\-buster$
+      version: ^7.3.0
+      resolved: 7.3.16-cli-buster
+      os: linux
+      architecture: amd64
+      last_updated_at: 2020-03-20T04:08:09.320968Z
+    - pattern: ^7.3\-cli\-buster$
+      version: "7.3"
+      resolved: 7.3-cli-buster
+      os: linux
+      architecture: amd64
+      last_updated_at: 2020-03-20T04:03:00.226624Z
+    - pattern: ^7.2.[0-9]+\-cli\-buster$
+      version: ^7.2.0
+      resolved: 7.2.29-cli-buster
+      os: linux
+      architecture: amd64
+      last_updated_at: 2020-03-20T03:59:03.96011Z
+    - pattern: ^7.2\-cli\-buster$
+      version: "7.2"
+      resolved: 7.2-cli-buster
+      os: linux
+      architecture: amd64
+      last_updated_at: 2020-03-20T03:53:28.07853Z
+    - pattern: ^7.1.[0-9]+\-cli\-buster$
+      version: ^7.1.0
+      resolved: 7.1.33-cli-buster
+      os: linux
+      architecture: amd64
+      last_updated_at: 2019-11-22T23:03:35.257977Z
+    - pattern: ^7.1\-cli\-buster$
+      version: "7.1"
+      resolved: 7.1-cli-buster
+      os: linux
+      architecture: amd64
+      last_updated_at: 2019-11-22T23:01:23.882476Z
+    - pattern: ^7\-cli\-buster$
+      version: "7"
+      resolved: 7-cli-buster
+      os: linux
+      architecture: amd64
+      last_updated_at: 2020-03-20T03:47:32.013652Z
