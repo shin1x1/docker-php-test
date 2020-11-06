@@ -1,4 +1,4 @@
-last_updated_at: 2020-10-31T00:15:29.772642754Z
+last_updated_at: 2020-11-06T00:17:30.410836452Z
 images:
 - template:
     src: Dockerfile.tpl
@@ -68,4 +68,4 @@ images:
       resolved: 7-cli-buster
       os: linux
       architecture: amd64
-      last_updated_at: 2020-10-30T02:23:32.780055Z
+      last_updated_at: 2020-11-06T00:05:41.571414Z
