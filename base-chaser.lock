@@ -1,4 +1,4 @@
-last_updated_at: 2020-11-07T00:18:29.624291876Z
+last_updated_at: 2020-11-19T00:18:41.682388107Z
 images:
 - template:
     src: Dockerfile.tpl
@@ -20,37 +20,37 @@ images:
       resolved: 7.4.12-cli-buster
       os: linux
       architecture: amd64
-      last_updated_at: 2020-11-06T03:01:01.659935Z
+      last_updated_at: 2020-11-18T16:28:55.185385Z
     - pattern: ^7.4\-cli\-buster$
       version: "7.4"
       resolved: 7.4-cli-buster
       os: linux
       architecture: amd64
-      last_updated_at: 2020-11-06T02:57:54.867141Z
+      last_updated_at: 2020-11-18T16:26:44.151997Z
     - pattern: ^7.3.[0-9]+\-cli\-buster$
       version: ^7.3.0
       resolved: 7.3.24-cli-buster
       os: linux
       architecture: amd64
-      last_updated_at: 2020-11-06T02:54:18.54237Z
+      last_updated_at: 2020-11-18T16:24:50.988443Z
     - pattern: ^7.3\-cli\-buster$
       version: "7.3"
       resolved: 7.3-cli-buster
       os: linux
       architecture: amd64
-      last_updated_at: 2020-11-06T02:40:18.004359Z
+      last_updated_at: 2020-11-18T16:22:03.605219Z
     - pattern: ^7.2.[0-9]+\-cli\-buster$
       version: ^7.2.0
       resolved: 7.2.34-cli-buster
       os: linux
       architecture: amd64
-      last_updated_at: 2020-11-06T02:34:37.202434Z
+      last_updated_at: 2020-11-18T16:19:23.592603Z
     - pattern: ^7.2\-cli\-buster$
       version: "7.2"
       resolved: 7.2-cli-buster
       os: linux
       architecture: amd64
-      last_updated_at: 2020-11-06T02:27:08.069239Z
+      last_updated_at: 2020-11-18T16:16:52.520542Z
     - pattern: ^7.1.[0-9]+\-cli\-buster$
       version: ^7.1.0
       resolved: 7.1.33-cli-buster
@@ -68,4 +68,4 @@ images:
       resolved: 7-cli-buster
       os: linux
       architecture: amd64
-      last_updated_at: 2020-11-06T02:19:14.071138Z
+      last_updated_at: 2020-11-18T16:13:52.661872Z
