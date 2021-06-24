@@ -1,4 +1,4 @@
-last_updated_at: 2021-06-05T00:17:40.740269981Z
+last_updated_at: 2021-06-24T00:04:08.579879062Z
 images:
 - template:
     src: Dockerfile.tpl
@@ -20,25 +20,25 @@ images:
       resolved: 7.4.20-cli-buster
       os: linux
       architecture: amd64
-      last_updated_at: 2021-06-04T07:13:01.25863Z
+      last_updated_at: 2021-06-23T14:11:31.577617Z
     - pattern: ^7.4\-cli\-buster$
       version: "7.4"
       resolved: 7.4-cli-buster
       os: linux
       architecture: amd64
-      last_updated_at: 2021-06-04T07:11:16.269415Z
+      last_updated_at: 2021-06-23T14:10:28.799035Z
     - pattern: ^7.3.[0-9]+\-cli\-buster$
       version: ^7.3.0
       resolved: 7.3.28-cli-buster
       os: linux
       architecture: amd64
-      last_updated_at: 2021-06-04T07:09:15.571808Z
+      last_updated_at: 2021-06-23T14:09:04.884989Z
     - pattern: ^7.3\-cli\-buster$
       version: "7.3"
       resolved: 7.3-cli-buster
       os: linux
       architecture: amd64
-      last_updated_at: 2021-06-04T07:05:22.607373Z
+      last_updated_at: 2021-06-23T14:06:40.725788Z
     - pattern: ^7.2.[0-9]+\-cli\-buster$
       version: ^7.2.0
       resolved: 7.2.34-cli-buster
@@ -68,4 +68,4 @@ images:
       resolved: 7-cli-buster
       os: linux
       architecture: amd64
-      last_updated_at: 2021-06-04T07:01:28.662247Z
+      last_updated_at: 2021-06-23T14:04:29.881554Z
